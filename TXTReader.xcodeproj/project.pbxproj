@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B24886C31DE9C03F00EFC09C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24886C01DE9C03F00EFC09C /* CategoryTableViewCell.swift */; };
 		B24886C41DE9C03F00EFC09C /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24886C11DE9C03F00EFC09C /* CategoryTableViewCell.xib */; };
-		B24886CB1DEAAF3C00EFC09C /* space@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B24886CA1DEAAF3C00EFC09C /* space@2x.png */; };
 		B24886CD1DEACAB600EFC09C /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24886CC1DEACAB600EFC09C /* CategoryController.swift */; };
 		B24886E01DEACEBD00EFC09C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24886D41DEACEAC00EFC09C /* Alamofire.framework */; };
 		B24886E11DEACEBD00EFC09C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24886DD1DEACEB500EFC09C /* ObjectMapper.framework */; };
@@ -79,7 +78,6 @@
 /* Begin PBXFileReference section */
 		B24886C01DE9C03F00EFC09C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		B24886C11DE9C03F00EFC09C /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
-		B24886CA1DEAAF3C00EFC09C /* space@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "space@2x.png"; sourceTree = "<group>"; };
 		B24886CC1DEACAB600EFC09C /* CategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 		B24886CE1DEACEAB00EFC09C /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		B24886D71DEACEB500EFC09C /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 				B2AB5AE91DE6CA7C009A178E /* SwiftyJSON.swift */,
 				B2AB5B4E1DE6F595009A178E /* Chapters.json */,
 				B2AB5B501DE6F8C1009A178E /* ChapterInfo.json */,
-				B24886CA1DEAAF3C00EFC09C /* space@2x.png */,
 				B2C674401DE6811700272742 /* Main.storyboard */,
 				B2C674431DE6811700272742 /* Assets.xcassets */,
 				B2C674451DE6811700272742 /* LaunchScreen.storyboard */,
@@ -368,7 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24886CB1DEAAF3C00EFC09C /* space@2x.png in Resources */,
 				B2C674471DE6811700272742 /* LaunchScreen.storyboard in Resources */,
 				B2C674441DE6811700272742 /* Assets.xcassets in Resources */,
 				B2AB5B511DE6F8C1009A178E /* ChapterInfo.json in Resources */,

@@ -85,11 +85,13 @@ class TXTReaderViewController: UIViewController {
                     print(chapterInfo?.body ?? "")
                     self.chapterInfo = chapterInfo
                     ChapterInfo.updateLocalModel(localModel: self.chapterInfo!)
-                    //请求到数据后需要刷新当前页
                     //不论向前或向后翻页，都从第一页开始显示
                     self.tempPage = 0
-                    self.pageViewController?.pageInfo = PageInfo(self.chapterInfo!, pageIndex: self.tempPage, total: self.chapterInfo?.ranges?.count ?? 0)
+                    //请求到数据后需要刷新当前页,如果不是当前页，则不需要刷新,否则会出现跳页
+                    if self.chapterInfo?.id == self.pageViewController?.pageInfo?.chapterInfo?.id {
+                        self.pageViewController?.pageInfo = PageInfo(self.chapterInfo!, pageIndex: self.tempPage, total: self.chapterInfo?.ranges?.count ?? 0)
                     }
+                }
             }
         }
     }
@@ -254,6 +256,9 @@ extension TXTReaderViewController:UIPageViewControllerDataSource,UIPageViewContr
         if  completed == true {
             currentChapter = tempChapter
             currentPage = tempPage
+        }else{
+            tempPage = currentPage
+            tempChapter = currentChapter
         }
     }
     

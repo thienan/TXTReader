@@ -31,7 +31,6 @@ class CategoryController: UIViewController,UITableViewDataSource,UITableViewDele
             view.addSubview(self.tableView)
             tableView.separatorStyle = .singleLineEtched
             tableView.separatorColor = UIColor.gray
-            tableView.backgroundColor = UIColor.red
             navigationController?.navigationBar.barTintColor = UIColor.black
             tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "Category")
             
@@ -39,7 +38,7 @@ class CategoryController: UIViewController,UITableViewDataSource,UITableViewDele
             navigationItem.leftBarButtonItem = leftItem
             navigationController?.setNavigationBarHidden(true, animated: false)
             let statusView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 30))
-            statusView.backgroundColor = UIColor.red
+            statusView.backgroundColor = UIColor.gray
             //添加阴影也能达到相同的目的
 //            let layer = statusView.layer
 //            let path = UIBezierPath(rect: layer.bounds)
@@ -81,7 +80,6 @@ class CategoryController: UIViewController,UITableViewDataSource,UITableViewDele
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Category",for: indexPath as IndexPath) as! CategoryTableViewCell
             cell.count.text = "\(indexPath.row)."
-            cell.backgroundColor = UIColor.red
             if titles.count > indexPath.row {
                 cell.tittle.text = titles[indexPath.row]
             }
